@@ -1,0 +1,66 @@
+/* SearchSidebar */
+.searchSidebar {
+  height: 100%;
+  width: 480px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightgrey;
+  padding-top: 32px;
+}
+
+/* Album in Search Results */
+.searchResults {
+  display: grid;
+  width: 80%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  gap: 4px 4px;
+}
+
+/* Album */
+.album {
+  position: relative;
+  width: 140px;
+}
+
+.album img {
+  width: 100%;
+}
+
+.albumDetails {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease-in-out;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.albumDetails:hover {
+  opacity: 1;
+}
+
+.albumDetails h3 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.albumDetails p {
+  color: #fff;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
